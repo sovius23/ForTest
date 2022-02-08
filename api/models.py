@@ -26,5 +26,7 @@ class User(AbstractUser):
 
 class Articles(models.Model):
     user_id = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
+    article_title = models.CharField(default=None, null=True, max_length=255)
     article_text = models.TextField()
     is_public = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
