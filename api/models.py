@@ -15,7 +15,7 @@ class User(AbstractUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
-    is_subscriber = models.BooleanField(default=False)
+    is_subscriber = models.BooleanField(default=True)
     is_author = models.BooleanField(default=False)
 
     objects = CustomUserManager()
@@ -25,8 +25,12 @@ class User(AbstractUser):
 
 
 class Articles(models.Model):
+    """Основная модель для хранения статей"""
     user_id = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
     article_title = models.CharField(default=None, null=True, max_length=255)
     article_text = models.TextField()
     is_public = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.article_title

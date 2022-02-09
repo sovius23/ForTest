@@ -1,92 +1,141 @@
 from django.http import HttpResponse
-from django.shortcuts import render
 from django.shortcuts import redirect
 from rest_framework.response import Response
 
 from .models import User, Articles
-from django.contrib.auth.hashers import make_password
-from .serializers import UserSerializer, ArticlesSerializer
-from rest_framework.permissions import AllowAny, IsAuthenticated
-from django.contrib.auth import login
-from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
+from .serializers import UserSerializer, ArticlesSerializer, LoginSerializer
+from rest_framework.permissions import IsAuthenticated
+from django.contrib.auth import login, authenticate
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView, ListCreateAPIView
 from rest_framework.views import APIView
-from rest_framework.authentication import BasicAuthentication
+from rest_framework.authentication import BasicAuthentication, SessionAuthentication
+from django.contrib.auth.hashers import make_password
 
 
 class RegisterView(CreateAPIView):
-    permission_classes = (AllowAny,)
+    """Панель регистрации"""
+
     serializer_class = UserSerializer
 
     def post(self, request):
-        user = User(
-            email=request.data.get("email"),
-            password=make_password(request.data.get("password")),
-            is_subscriber=True,
-            is_author=True if request.data.get("is_author") == "true" else False
+        user = User.objects.create_user(
+            request.data.get("email"),
+            request.data.get("password"),
+            request.data.get("is_author")
         )
 
         try:
-            user.save()
+            login(request, user)
         except Exception as e:
-            return Response({"Error! Cannot register!": e.args[0]})
+            return Response({"Error! Cannot sign in!": e.error_list[0]})
         else:
+            return redirect(f"/api/cabinet/{user.id}")
 
-            try:
+
+class LoginView(APIView):
+    """Панель входа"""
+
+    serializer_class = LoginSerializer
+
+    def post(self, request):
+
+        email = request.data.get("email")
+        password = request.data.get("password")
+
+        user = authenticate(email=email, password=password)
+
+        if user is not None:
+            if user.is_active:
                 login(request, user)
-                q=5
-            except Exception as e:
-                return Response({"Error! Cannot sign in!": e.args[0]})
+
+                return redirect(f"/api/cabinet/{user.id}")
             else:
-                return redirect("/api/articles/public")
+                return HttpResponse("Your account is not active!")
+        else:
+            return HttpResponse("Not Found!")
+
+
+class UserCabinet(RetrieveUpdateDestroyAPIView):
+    """Личный кабинет"""
+
+    authentication_classes = (BasicAuthentication, SessionAuthentication)
+    permission_classes = (IsAuthenticated,)
+    serializer_class = UserSerializer
+    queryset = User.objects.all()
+    http_method_names = ['get', 'patch', 'delete']
+
+    def get(self, request, pk):
+        return super().get(request) if request.user.id == pk else HttpResponse("You don`t have permissions!")
+
+    def patch(self, request, pk):
+        request.data["password"] = make_password(request.data.get("password"))
+        return super().patch(request) if request.user.id == pk else HttpResponse("You don`t have permissions!")
+
+    def delete(self, request, pk):
+        return super().delete(request) if request.user.id == pk else HttpResponse("You don`t have permissions!")
 
 
 class PublicArticlesView(ListAPIView):
-    permission_classes = (AllowAny,)
+    """Список Статей"""
+
     serializer_class = ArticlesSerializer
 
     def get_queryset(self):
         return Articles.objects.all() if self.request.user.is_authenticated else Articles.objects.filter(is_public=True)
 
 
-class ArticlesCreateUpdateDestroyView(RetrieveUpdateDestroyAPIView):
-    authentication_classes = (BasicAuthentication,)
+class ArticlesCreateUpdateDestroyView(ListCreateAPIView):
+    """Страница редактирования статей"""
+    authentication_classes = (BasicAuthentication, SessionAuthentication)
     permission_classes = (IsAuthenticated,)
     serializer_class = ArticlesSerializer
+
+    def get_queryset(self):
+        user = User.objects.get(id=self.request.user.id)
+        return Articles.objects.filter(user_id=user)
 
     def post(self, request):
         if not self.request.user.is_author:
             return HttpResponse("You don`t have permissions! Become an author!")
         else:
             article = Articles(
-                user_id=User.objects.get(id=request.user.get("id")),
-                article_title=request.data.get("title"),
-                article_text=request.data.get("text"),
+                user_id=User.objects.get(id=request.user.id),
+                article_title=request.data.get("article_title"),
+                article_text=request.data.get("article_text"),
                 is_public=True if request.data.get("public") == "true" else False
             )
 
             try:
                 article.save()
             except Exception as e:
-                return Response({"Error! Cannot save an article!": e.args[0]})
+                return Response({"Error! Cannot save an article!": e.error_list[0]})
             else:
                 return HttpResponse("Created!")
 
-    def patch(self, request,pk):
-        if not self.request.user.is_author:
-            return HttpResponse("You don`t have permissions! Become an author!")
-        else:
-            if Articles.objects.get(
-                id=request.data.get("article_id")
-            ).user_id == User.objects.get(
+    def patch(self, request):
+        article = Articles.objects.get(id=request.data.get("article_id"))
+        if article.user_id == User.objects.get(
                 id=request.user.get("id")
-            ):
-                article = Articles(
-                    user_id=User.objects.get(id=request.user.get("id")),
-                    article_title=request.data.get("title"),
-                    article_text=request.data.get("text"),
-                    is_public=True if request.data.get("public") == "true" else False
-                )
-            else:
-                return HttpResponse("You don`t have permissions for this Article!")
+        ):
+            article = Articles(
+                user_id=User.objects.get(id=request.user.get("id")),
+                article_title=request.data.get("title"),
+                article_text=request.data.get("text"),
+                is_public=True if request.data.get("public") == "true" else False
+            )
+            try:
+                article.save()
+            except Exception as e:
+                return Response({"Error! Cannot update an article!": e.error_list[0]})
+        else:
+            return HttpResponse("You don`t have permissions for this Article!")
 
+    def delete(self, request):
 
+        article = Articles.objects.get(id=request.data.get("article_id"))
+        if article.user_id == User.objects.get(
+                id=request.user.get("id")
+        ):
+            article.delete()
+
+        return HttpResponse("You don`t have permissions for this Article!")
