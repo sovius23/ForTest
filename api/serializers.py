@@ -8,6 +8,7 @@ User = get_user_model()
 
 
 class UserSerializer(ModelSerializer):
+    """Сериализатор для регистрации новых пользователей"""
     password2 = CharField(label="Repeat your password!",style={"input_type": "password"},write_only=True)
     class Meta:
         model = User
@@ -46,6 +47,7 @@ class UserSerializer(ModelSerializer):
 
 
 class LoginSerializer(ModelSerializer):
+    """Сериализатор для входа"""
     class Meta:
         model = User
         fields = ("email", "password")
@@ -73,6 +75,7 @@ class LoginSerializer(ModelSerializer):
 
 
 class CabinetSerializer(ModelSerializer):
+    """Сериализатор для личного кабинета"""
     class Meta:
         model = User
         fields = (

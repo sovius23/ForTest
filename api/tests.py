@@ -1,5 +1,7 @@
 from django.contrib.auth import get_user_model
+from .models import Articles
 from django.test import TestCase
+
 
 class UsersManagersTests(TestCase):
 
@@ -20,21 +22,23 @@ class UsersManagersTests(TestCase):
             User.objects.create_user(email='')
         with self.assertRaises(ValueError):
             User.objects.create_user(email='', password="foo")
-        user.delete()
 
-    def test_login_logout_user(self):
+    def test_articles(self):
         User = get_user_model()
-        user = User.objects.create_user(email='normallogin@user.com', password='foobar123')
-        self.assertTrue(user.is_authenticated)
-        self.client.logout()
-        self.client.login(email='unnormal@user.com', password='foobar123')
-        self.assertFalse(user.is_authenticated)
-        self.client.login(email='normallogin@user.com',password='foobar123')
-        self.assertTrue(user.is_authenticated)
+        user = User.objects.create_user(email='normal@user.com', password='foobar123')
+        self.assertFalse(user.is_author)
         user.delete()
+        user = User.objects.create_user(email='normalauthor@user.com', password='foobar123', is_author="true")
+        self.assertTrue(user.is_author)
+        article = Articles(
+            user_id=user,
+            article_title="title",
+            article_text="article text",
+            is_public="true",
+        )
+        article.save()
+        self.assertFalse(article.is_public)
+        article.article_title = "new title"
+        article.save()
+        self.assertEqual(article.article_title,"new title")
 
-    def test_patch(self):
-        User = get_user_model()
-        user = User.objects.create_user(email='normalpatch@user.com', password='foobar123')
-        response = self.client.patch('/api/cabinet', {'is_author': 'true', 'password': '12test12'})
-        user.delete()
