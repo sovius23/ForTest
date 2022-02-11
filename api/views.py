@@ -1,5 +1,5 @@
 from rest_framework.serializers import ValidationError
-from django.http import HttpResponse
+from django.http import Http404
 from django.shortcuts import redirect
 from rest_framework.response import Response
 
@@ -21,12 +21,11 @@ class RegisterView(CreateAPIView):
     serializer_class = UserSerializer
 
     def post(self, request):
-        serializer = UserSerializer(data=request.data)
 
         try:
-            serializer.is_valid(raise_exception=True)
+            self.serializer_class.validate(self, data=request.data)
         except ValidationError as e:
-            error = str(e.args[0]).split("\'")[3]
+            error = e.args[0]
             return Response({f"Error! {error}"})
 
         try:
@@ -52,12 +51,11 @@ class LoginView(APIView):
     serializer_class = LoginSerializer
 
     def post(self, request):
-        serializer = UserSerializer(data=request.data)
 
         try:
-            serializer.is_valid(raise_exception=True)
+            self.serializer_class.validate(self, data=request.data)
         except ValidationError as e:
-            error = str(e.args[0]).split("\'")[3]
+            error = e.args[0]
             return Response({f"Error! {error}"})
 
         email = request.data.get("email")
@@ -70,9 +68,9 @@ class LoginView(APIView):
                 login(request, user)
                 return redirect("/api/cabinet")
             else:
-                return HttpResponse("Your account is not active!")
+                return Response("Your account is not active!")
         else:
-            return HttpResponse("Not Found!")
+            return Response("Not Found!")
 
 
 class LogOutView(APIView):
@@ -105,7 +103,7 @@ class UserCabinetView(RetrieveUpdateDestroyAPIView):
 
 
 class PublicArticlesView(ListAPIView):
-    """Список публичных и всех статей"""
+    """Список публичных или всех статей(при регистрации)"""
 
     serializer_class = ArticlesSerializer
 
@@ -133,7 +131,7 @@ class ArticlesListCreateView(ListCreateAPIView):
         try:
             article.save()
         except:
-            return HttpResponse("Can`t save!")
+            return Response("Can`t save!")
 
         return redirect("/api/articles/create")
 
@@ -147,13 +145,14 @@ class ArticlesUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     http_method_names = ['get', 'patch', 'delete']
 
     def get_object(self):
-        article = Articles.objects.get(id=self.kwargs.get("pk"))
-        if not article:
-            raise Exception("Article not found!")
-        elif article.user_id == User.objects.get(id=self.request.user.id):
+        try:
+            article = Articles.objects.get(id=self.kwargs.get("pk"))
+        except:
+            raise Http404("Article not found")
+        if article.user_id == User.objects.get(id=self.request.user.id):
             return article
         else:
-            raise Exception("You don`t have permissions for this Article!")
+            raise Http404("You don`t have rights!")
 
     def get_queryset(self):
         user = User.objects.get(id=self.request.user.id)
