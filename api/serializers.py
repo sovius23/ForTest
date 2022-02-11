@@ -1,6 +1,9 @@
-from rest_framework.serializers import ModelSerializer, ValidationError, CharField
-from .models import User, Articles
+from rest_framework.serializers import ModelSerializer, ValidationError
+from .models import Articles
+from django.contrib.auth import get_user_model
 import re
+
+User = get_user_model()
 
 
 class UserSerializer(ModelSerializer):
@@ -33,16 +36,29 @@ class LoginSerializer(ModelSerializer):
         model = User
         fields = ("email", "password")
 
+
 class CabinetSerializer(ModelSerializer):
     class Meta:
         model = User
-        fields = ("password","is_author", "is_subscriber")
+        fields = (
+            "email",
+            "password",
+            "is_author",
+            "is_subscriber",
+            "is_active"
+        )
+
+        extra_kwargs = {
+            "password": {"style": {"input_type": "password"}, "write_only": True},
+            "email": {"read_only": True}
+        }
 
 
 class ArticlesSerializer(ModelSerializer):
     class Meta:
         model = Articles
-        fields = ("article_title", "article_text", "user_id","is_public")
+        fields = ("id", "article_title", "article_text", "user_id", "is_public")
         extra_kwargs = {
-            'user_id': {'read_only': True},
+            "user_id": {"read_only": True},
+            "id": {"read_only": True},
         }

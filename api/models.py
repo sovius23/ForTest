@@ -32,5 +32,7 @@ class Articles(models.Model):
     is_public = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name_plural = 'Articles'
     def __str__(self):
         return self.article_title
