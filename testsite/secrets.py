@@ -5,5 +5,5 @@ DATA_BASE_SETTINGS ={
     'NAME': 'ShowBase',
     'USER': 'postgres',
     'PASSWORD': 'admin',
-    'HOST': '127.0.0.1',
+    'HOST': 'test_db',
     'PORT': '5432', }
