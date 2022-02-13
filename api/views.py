@@ -36,7 +36,7 @@ class RegisterView(CreateAPIView):
                 request.data.get("password"),
                 request.data.get("is_author")
             )
-            logger.info(f"Create user {user.email}")
+            q = logger.info(f"Create user {user.email}")
         except Exception as e:
             return Response({"Error! Cannot save user!"})
 
