@@ -113,8 +113,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle'
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '10/minute',
-        'user': '10/minute'
+        'anon': '100/hour',
+        'user': '100/hour'
     }
 }
 AUTH_USER_MODEL = 'api.User'
