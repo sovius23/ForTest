@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'testsite.wsgi.application'
 DATABASES = {
     'default': DATA_BASE_SETTINGS
 }
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -107,7 +107,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
     'rest_framework.authentication.SessionAuthentication'
-    ]
+    ],
 }
 AUTH_USER_MODEL = 'api.User'
 # Internationalization
@@ -162,6 +162,14 @@ LOGGING = {
             'level': 'DEBUG',
             'handlers': ['console', 'file']
         }
+    }
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'cash_test_table',
+        'TIMEOUT': 600,
     }
 }
 

@@ -2,6 +2,7 @@ from rest_framework.serializers import ValidationError
 from django.http import Http404
 from django.shortcuts import redirect
 from rest_framework.response import Response
+import logging
 
 from .models import Articles
 from .serializers import UserSerializer, ArticlesSerializer, LoginSerializer, CabinetSerializer
@@ -13,6 +14,7 @@ from rest_framework.authentication import BasicAuthentication, SessionAuthentica
 from django.contrib.auth.hashers import make_password
 
 User = get_user_model()
+logger = logging.getLogger(__name__)
 
 
 class RegisterView(CreateAPIView):
@@ -34,6 +36,7 @@ class RegisterView(CreateAPIView):
                 request.data.get("password"),
                 request.data.get("is_author")
             )
+            logger.info(f"Create user {user.email}")
         except Exception as e:
             return Response({"Error! Cannot save user!"})
 
@@ -42,7 +45,7 @@ class RegisterView(CreateAPIView):
         except Exception as e:
             return Response({"Error! Cannot sign in!"})
         else:
-            return redirect("/api/cabinet")
+            return Response({"Signed in!"})
 
 
 class LoginView(APIView):
@@ -66,7 +69,7 @@ class LoginView(APIView):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                return redirect("/api/cabinet")
+                return Response("Successfull login!")
             else:
                 return Response("Your account is not active!")
         else:
@@ -79,7 +82,7 @@ class LogOutView(APIView):
 
     def get(self, request):
         logout(request)
-        return redirect("/api/articles/public")
+        return Response("Successfull logout!")
 
 
 class UserCabinetView(RetrieveUpdateDestroyAPIView):
@@ -96,6 +99,7 @@ class UserCabinetView(RetrieveUpdateDestroyAPIView):
 
     def patch(self, request):
         try:
+            self.serializer_class.validate(self, data=request.data)
             request.data["password"] = make_password(request.data["password"])
             return super().patch(request)
         except:
@@ -122,18 +126,22 @@ class ArticlesListCreateView(ListCreateAPIView):
         return Articles.objects.filter(user_id=user)
 
     def post(self, request):
-        article = Articles(
-            user_id=User.objects.get(id=request.user.id),
-            article_title=request.data.get("article_title"),
-            article_text=request.data.get("article_text"),
-            is_public=True if request.data.get("is_public") == "true" else False
-        )
+        if request.user.is_author:
+            article = Articles(
+                user_id=User.objects.get(id=request.user.id),
+                article_title=request.data.get("article_title"),
+                article_text=request.data.get("article_text"),
+                is_public=True if request.data.get("is_public") == "true" else False
+            )
+        else:
+            return Response("Become an author!")
         try:
             article.save()
+            # logger.info(f"Article created {article.user_id}:{article.article_title}")
         except:
             return Response("Can`t save!")
 
-        return redirect("/api/articles/create")
+        return Response("Article save!")
 
 
 class ArticlesUpdateDestroyView(RetrieveUpdateDestroyAPIView):

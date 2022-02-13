@@ -3,7 +3,7 @@ from django.contrib.auth.base_user import BaseUserManager
 
 class CustomUserManager(BaseUserManager):
 
-    def create_user(self, email, password, author=False, **extra_fields):
+    def create_user(self, email, password, is_author=False, **extra_fields):
         """
         Сохранение user с паролем и email
         """
@@ -11,7 +11,7 @@ class CustomUserManager(BaseUserManager):
             raise ValueError('The Email must be set')
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
-        user.is_author = True if author == "true" else False
+        user.is_author = True if is_author == "true" else False
         user.set_password(password)
         user.save()
         return user
