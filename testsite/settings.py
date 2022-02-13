@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+
+import django_heroku
+
 from .secrets import DATA_BASE_SETTINGS,DJANGO_SECRET_KEY
 import dj_database_url
 
@@ -171,3 +174,5 @@ CACHES = {
         'TIMEOUT': 600,
     }
 }
+
+django_heroku.settings(locals(), logging=False)
