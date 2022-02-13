@@ -14,12 +14,11 @@ from pathlib import Path
 
 import django_heroku
 
-from .secrets import DATA_BASE_SETTINGS,DJANGO_SECRET_KEY
+from .secrets import DATA_BASE_SETTINGS, DJANGO_SECRET_KEY
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -31,7 +30,6 @@ SECRET_KEY = DJANGO_SECRET_KEY
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
 
 # Application definition
 
@@ -77,7 +75,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'testsite.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -108,8 +105,17 @@ AUTH_PASSWORD_VALIDATORS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
-    'rest_framework.authentication.SessionAuthentication'
+        'rest_framework.authentication.SessionAuthentication'
     ],
+
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '10/minute',
+        'user': '10/minute'
+    }
 }
 AUTH_USER_MODEL = 'api.User'
 # Internationalization
@@ -123,7 +129,6 @@ TIME_ZONE = 'Europe/Moscow'
 USE_I18N = True
 
 USE_L10N = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
