@@ -6,6 +6,11 @@ git clone git@github.com:sovius23/fortest.git main
 3.Применить миграции python manage.py migrate (или pip3)
 Запуск командой python manage.py runserver 3000 (или любой другой порт) (или python3)
 
+Либо через docker в ветке docker_branch:
+1.docker-compose build
+2.docker-compose up
+3.адрес http://localhost:3000/
+
 Heroku-развертка: https://presentsite.herokuapp.com/  - возможно потребуется время для запуска сервера,около 5 сек.
 
 Работает визуальное представление на DRF - для удобства добавлена SessionAuthentication
