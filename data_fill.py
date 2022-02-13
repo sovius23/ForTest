@@ -20,4 +20,11 @@ def fill_users():
             }
             headers = {"Authorization": {"username": f"example{rand}@example.ru", "password": "examplepass123"}}
 
-        requests.post("https://presentsite.herokuapp.com/api/artile/create", data=data, headers=headers)
+        q = requests.post("https://presentsite.herokuapp.com/api/articles/create",
+                      data=data,
+                      auth=(f"example{rand}@example.ru", "examplepass123")
+                      )
+        print(q)
+
+
+fill_users()

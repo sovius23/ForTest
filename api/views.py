@@ -137,11 +137,11 @@ class ArticlesListCreateView(ListCreateAPIView):
             return Response("Become an author!")
         try:
             article.save()
+            return Response("Article save!")
             # logger.info(f"Article created {article.user_id}:{article.article_title}")
         except:
             return Response("Can`t save!")
 
-        return Response("Article save!")
 
 
 class ArticlesUpdateDestroyView(RetrieveUpdateDestroyAPIView):
