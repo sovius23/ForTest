@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import RegisterView, PublicArticlesView,UserCabinetView,ArticlesUpdateDestroyView,LoginView,LogOutView,ArticlesListCreateView
+from .views import RegisterView, PublicArticlesView,UserCabinetView,ArticlesUpdateDestroyView,LoginView,LogOutView,ArticlesListCreateView,cel
 
 urlpatterns = [
 
@@ -10,5 +10,6 @@ urlpatterns = [
     path("articles/public", PublicArticlesView.as_view()),
     path("articles/create", ArticlesListCreateView.as_view()),
     path("articles/edit/<int:pk>", ArticlesUpdateDestroyView.as_view()),
+    path("celery", cel),
 
 ]

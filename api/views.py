@@ -1,6 +1,5 @@
 from rest_framework.serializers import ValidationError
-from django.http import Http404
-from django.shortcuts import redirect
+from django.http import Http404, HttpResponse
 from rest_framework.response import Response
 import logging
 
@@ -12,10 +11,14 @@ from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDe
 from rest_framework.views import APIView
 from rest_framework.authentication import BasicAuthentication, SessionAuthentication
 from django.contrib.auth.hashers import make_password
+from .tasks import debug_task
 
 User = get_user_model()
 logger = logging.getLogger(__name__)
 
+def cel(request):
+    debug_task.delay()
+    return HttpResponse("celery")
 
 class RegisterView(CreateAPIView):
     """Панель регистрации"""
@@ -112,6 +115,7 @@ class PublicArticlesView(ListAPIView):
     serializer_class = ArticlesSerializer
 
     def get_queryset(self):
+        supper_sum.delay(5, 7)
         return Articles.objects.all() if self.request.user.is_authenticated else Articles.objects.filter(is_public=True)
 
 
@@ -165,3 +169,6 @@ class ArticlesUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         user = User.objects.get(id=self.request.user.id)
         return Articles.objects.filter(user_id=user)
+
+
+
