@@ -1,0 +1,753 @@
+2022-04-13 12:56:27,169 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 12:56:47,705 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:21:00,537 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:21:44,905 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:22:09,493 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:22:10,089 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:22:10,271 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:24:03,557 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:24:04,356 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-13 13:24:04,555 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:24:59,128 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:25:02,052 django.request WARNING  Not Found: /favicon.ico
+2022-04-13 13:43:23,402 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-13 13:43:24,201 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:48:36,606 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:48:50,315 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\artdate\urls.py changed, reloading.
+2022-04-13 13:48:50,770 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:49:29,343 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\artdate\urls.py changed, reloading.
+2022-04-13 13:49:29,940 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:50:33,468 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:50:55,974 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:50:57,730 django.request WARNING  Not Found: /
+2022-04-13 13:51:04,532 django.request WARNING  Method Not Allowed: /api/user/register
+2022-04-13 13:51:43,773 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:51:46,428 django.request WARNING  Bad Request: /api/user/register
+2022-04-13 13:51:57,172 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 430, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+AssertionError: .validate() should return the validated data
+2022-04-13 13:53:46,006 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:54:25,916 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 430, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+AssertionError: .validate() should return the validated data
+2022-04-13 13:54:43,640 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:54:59,099 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:55:01,440 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Profile.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Profile.objects.create()`. You may need to make the field read-only, or override the RegisterSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+2022-04-13 13:56:34,834 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 13:58:03,486 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:00:24,430 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:03:43,430 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:03:54,438 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:03:57,012 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Profile.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Profile.objects.create()`. You may need to make the field read-only, or override the RegisterSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+2022-04-13 14:04:19,382 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:04:20,419 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:11:46,833 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:11:52,374 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 26, in create
+    url = validated_data['url'],
+KeyError: 'url'
+2022-04-13 14:12:50,454 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:12:52,928 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "sex" отношения "api_profile" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (1, admaruqwe, null, f, admin, , , f, t, 2022-04-13 14:12:52.843687+03, ad@ma.ru, t, f, null, null, null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 25, in create
+    user = Profile.objects.create(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\contrib\auth\base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "sex" отношения "api_profile" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (1, admaruqwe, null, f, admin, , , f, t, 2022-04-13 14:12:52.843687+03, ad@ma.ru, t, f, null, null, null, null).
+
+2022-04-13 14:13:12,712 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "sex" отношения "api_profile" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (2, admaruqwe, null, f, admin, , , f, t, 2022-04-13 14:13:12.672169+03, ad@ma.ru, t, f, null, null, null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 25, in create
+    user = Profile.objects.create(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\contrib\auth\base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "sex" отношения "api_profile" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (2, admaruqwe, null, f, admin, , , f, t, 2022-04-13 14:13:12.672169+03, ad@ma.ru, t, f, null, null, null, null).
+
+2022-04-13 14:13:37,079 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:13:40,373 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "sex" отношения "api_profile" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (3, admaruqwe, null, f, admin, , , f, t, 2022-04-13 14:13:40.32089+03, ad@ma.ru, t, f, null, null, null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 25, in create
+    user = Profile.objects.create(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\contrib\auth\base_user.py", line 68, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "sex" отношения "api_profile" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (3, admaruqwe, null, f, admin, , , f, t, 2022-04-13 14:13:40.32089+03, ad@ma.ru, t, f, null, null, null, null).
+
+2022-04-13 14:14:47,992 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:14:48,450 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:16:43,687 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:16:44,170 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:29:34,435 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:29:34,932 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:30:55,150 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:30:55,587 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:31:40,220 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:31:40,670 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:33:05,663 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:33:17,244 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Profile.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Profile.objects.create()`. You may need to make the field read-only, or override the RegisterSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+2022-04-13 14:34:07,461 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Profile.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Profile.objects.create()`. You may need to make the field read-only, or override the RegisterSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+2022-04-13 14:35:21,052 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:35:21,685 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:36:28,404 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:36:28,842 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:37:31,377 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:37:31,908 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:37:37,403 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 29, in create
+    return super().create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Profile.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Profile.objects.create()`. You may need to make the field read-only, or override the RegisterSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Profile() got an unexpected keyword argument 'password2'
+
+2022-04-13 14:38:30,535 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-13 14:38:31,050 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:47:36,211 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:48:01,697 django.request WARNING  Method Not Allowed: /api/user/register
+2022-04-13 14:49:42,136 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:49:42,404 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py", line 24, in post
+    if not serializer.is_valid():
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `password2` is not valid for model `Profile`.
+2022-04-13 14:50:02,186 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:50:09,280 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+2022-04-13 14:51:42,962 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:57:35,308 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 14:57:35,973 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:57:52,755 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 14:57:53,276 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:58:00,841 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 14:58:01,393 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:58:46,323 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 14:58:46,817 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 14:59:38,792 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 14:59:39,269 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:00:37,459 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:04:29,314 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:04:49,799 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py", line 41, in post
+    token = Token.objects.create(user=new_profile)
+AttributeError: type object 'Token' has no attribute 'objects'
+2022-04-13 15:06:02,837 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\artdate\settings.py changed, reloading.
+2022-04-13 15:06:03,822 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:06:20,585 django.request ERROR    Internal Server Error: /api/user/register
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py", line 44, in post
+    "first_name": profile.first_name,
+AttributeError: 'QueryDict' object has no attribute 'first_name'
+2022-04-13 15:07:54,548 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:08:57,568 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:09:25,053 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:10:48,247 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:11:39,062 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:12:55,181 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:19:16,749 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 15:19:17,352 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-13 15:19:44,476 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-13 15:19:45,088 django.utils.autoreload INFO     Watching for file changes with StatReloader
