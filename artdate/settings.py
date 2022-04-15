@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'artdate.middlewares.SetLastVisitMiddleware',
 ]
 
 ROOT_URLCONF = 'artdate.urls'
@@ -198,8 +199,6 @@ LOGGING = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'api.Profile'
-
-ASGI_APPLICATION = "artdate.routing.application"
 
 CHANNEL_LAYERS = {
     'default': {

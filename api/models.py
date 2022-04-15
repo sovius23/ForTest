@@ -1,7 +1,6 @@
 from django.db import models
 
 from django.contrib.auth.models import AbstractUser
-from django.db.models.signals import post_save
 
 
 class Profile(AbstractUser):
@@ -19,12 +18,12 @@ class Profile(AbstractUser):
     age = models.PositiveSmallIntegerField(blank=True, null=True)
     longitude = models.FloatField(blank=True, null=True)
     latitude = models.FloatField(blank=True, null=True)
-
+    last_seen = models.DateTimeField(auto_now=True)
     def __str__(self):
         return self.username
 
 
-class ProfilePhoto():
+class ProfilePhoto(models.Model):
     profile = models.ForeignKey(Profile, related_name='photos', on_delete=models.CASCADE)
     photo = models.FileField(models.Model)
 
@@ -42,7 +41,7 @@ class Subjects(models.Model):
 
 class Article(models.Model):
     """Simple articles model"""
-    profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='articles')
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     header = models.CharField(blank=True, max_length=255)
     text = models.TextField()
@@ -57,12 +56,11 @@ class Article(models.Model):
         return self.header
 
 
-class MatchedLikes(models.Model):
+class Likes(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='who_did_i_like')
-    who_like_profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='who_like_me')
 
     class Meta:
-        verbose_name_plural = 'Matched Likes'
+        verbose_name_plural = 'Likes'
 
     def __str__(self):
-        return f"{self.profile}-{self.who_like_profile}"
+        return self.profile

@@ -751,3 +751,1183 @@ AttributeError: 'QueryDict' object has no attribute 'first_name'
 2022-04-13 15:19:17,352 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2022-04-13 15:19:44,476 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
 2022-04-13 15:19:45,088 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:29:10,204 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:29:11,101 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:29:11,294 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:29:46,468 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:29:47,214 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:29:47,403 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:30:04,286 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 12:30:05,025 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:30:05,224 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:30:54,079 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:30:54,805 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:30:54,993 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:31:23,113 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:31:23,873 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:31:24,060 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:31:48,173 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:31:48,864 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:31:49,056 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:33:14,661 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:33:15,457 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:33:15,649 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:36:50,519 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:36:51,221 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:36:51,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:36:51,574 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:36:51,574 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:36:51,575 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:37:07,142 daphne.http_protocol DEBUG    HTTP b'GET' request for ['127.0.0.1', 49629]
+2022-04-15 12:37:07,224 django.request WARNING  Not Found: /
+2022-04-15 12:37:07,226 daphne.http_protocol DEBUG    HTTP 404 response started for ['127.0.0.1', 49629]
+2022-04-15 12:37:07,226 daphne.http_protocol DEBUG    HTTP close for ['127.0.0.1', 49629]
+2022-04-15 12:37:07,226 daphne.http_protocol DEBUG    HTTP response complete for ['127.0.0.1', 49629]
+2022-04-15 12:37:07,226 django.channels.server WARNING  HTTP GET / 404 [0.08, 127.0.0.1:49629]
+2022-04-15 12:38:42,755 django.channels.server INFO     WebSocket HANDSHAKING /ws [127.0.0.1:60377]
+2022-04-15 12:38:42,755 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 60377] to WebSocket
+2022-04-15 12:38:43,634 daphne.server ERROR    Exception inside application: No route found for path 'ws'.
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'ws'.
+2022-04-15 12:38:43,664 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 60377]
+2022-04-15 12:38:43,664 django.channels.server INFO     WebSocket DISCONNECT /ws [127.0.0.1:60377]
+2022-04-15 12:39:29,577 django.channels.server INFO     WebSocket HANDSHAKING /ws [127.0.0.1:57275]
+2022-04-15 12:39:29,578 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 57275] to WebSocket
+2022-04-15 12:39:30,085 daphne.server ERROR    Exception inside application: No route found for path 'ws'.
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'ws'.
+2022-04-15 12:39:30,086 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 57275]
+2022-04-15 12:39:30,086 django.channels.server INFO     WebSocket DISCONNECT /ws [127.0.0.1:57275]
+2022-04-15 12:43:47,556 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:43:48,312 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:43:48,500 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:43:48,703 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:43:48,703 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:43:48,703 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:44:08,336 django.channels.server INFO     WebSocket HANDSHAKING /check [127.0.0.1:49775]
+2022-04-15 12:44:08,337 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 49775] to WebSocket
+2022-04-15 12:44:08,918 daphne.server ERROR    Exception inside application: No route found for path 'check'.
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'check'.
+2022-04-15 12:44:08,931 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 49775]
+2022-04-15 12:44:08,931 django.channels.server INFO     WebSocket DISCONNECT /check [127.0.0.1:49775]
+2022-04-15 12:44:23,513 django.channels.server INFO     WebSocket HANDSHAKING /ws/check [127.0.0.1:49781]
+2022-04-15 12:44:23,513 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 49781] to WebSocket
+2022-04-15 12:44:23,700 aioredis     DEBUG    Creating tcp connection to ('127.0.0.1', 6379)
+2022-04-15 12:44:23,701 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 49781] open and established
+2022-04-15 12:44:23,702 django.channels.server INFO     WebSocket CONNECT /ws/check [127.0.0.1:49781]
+2022-04-15 12:44:23,702 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 49781] accepted by application
+2022-04-15 12:44:23,770 aioredis     DEBUG    Closed 1 connection(s)
+2022-04-15 12:44:24,088 daphne.server ERROR    Exception inside application: ERR unknown command 'BZPOPMIN'
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    result = task.result()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 492, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 547, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 385, in _brpop_with_clean
+    result = await connection.bzpopmin(channel, timeout=timeout)
+aioredis.errors.ReplyError: ERR unknown command 'BZPOPMIN'
+2022-04-15 12:44:24,114 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 49781]
+2022-04-15 12:44:24,114 django.channels.server INFO     WebSocket DISCONNECT /ws/check [127.0.0.1:49781]
+2022-04-15 12:47:54,167 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\venv\Lib\site-packages\daphne\endpoints.py changed, reloading.
+2022-04-15 12:47:54,880 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:47:55,095 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:47:55,251 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:47:55,251 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:47:55,252 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:48:10,002 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:48:14,177 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:48:14,396 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:48:14,547 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:48:14,547 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:48:14,548 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:48:20,347 daphne.ws_protocol ERROR    [Failure instance: Traceback: <class 'TypeError'>: __call__() missing 2 required positional arguments: 'receive' and 'send'
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\autobahn\websocket\protocol.py:2878:processHandshake
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\txaio\tx.py:369:as_future
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\twisted\internet\defer.py:190:maybeDeferred
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\daphne\ws_protocol.py:72:onConnect
+--- <exception caught here> ---
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\twisted\internet\defer.py:190:maybeDeferred
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\daphne\server.py:200:create_application
+]
+2022-04-15 12:48:20,347 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 53070] to WebSocket
+2022-04-15 12:48:25,000 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 53070]
+2022-04-15 12:48:25,000 django.channels.server INFO     WebSocket DISCONNECT /ws/check [127.0.0.1:53070]
+2022-04-15 12:48:53,494 daphne.ws_protocol ERROR    [Failure instance: Traceback: <class 'TypeError'>: __call__() missing 2 required positional arguments: 'receive' and 'send'
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\autobahn\websocket\protocol.py:2878:processHandshake
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\txaio\tx.py:369:as_future
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\twisted\internet\defer.py:190:maybeDeferred
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\daphne\ws_protocol.py:72:onConnect
+--- <exception caught here> ---
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\twisted\internet\defer.py:190:maybeDeferred
+C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\daphne\server.py:200:create_application
+]
+2022-04-15 12:48:53,494 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 50609] to WebSocket
+2022-04-15 12:48:58,005 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 50609]
+2022-04-15 12:48:58,005 django.channels.server INFO     WebSocket DISCONNECT /ws/check [127.0.0.1:50609]
+2022-04-15 12:50:33,026 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\venv\Lib\site-packages\daphne\utils.py changed, reloading.
+2022-04-15 12:50:33,887 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:50:34,141 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:50:34,320 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:50:34,320 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:50:34,321 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:50:52,764 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:50:53,830 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:50:54,040 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:50:54,185 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:50:54,185 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:50:54,185 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:50:57,223 django.channels.server INFO     WebSocket HANDSHAKING /ws/check [127.0.0.1:58335]
+2022-04-15 12:50:57,224 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 58335] to WebSocket
+2022-04-15 12:50:57,254 aioredis     DEBUG    Creating tcp connection to ('127.0.0.1', 6379)
+2022-04-15 12:50:57,255 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58335] open and established
+2022-04-15 12:50:57,255 django.channels.server INFO     WebSocket CONNECT /ws/check [127.0.0.1:58335]
+2022-04-15 12:50:57,255 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 58335] accepted by application
+2022-04-15 12:50:57,263 aioredis     DEBUG    Closed 1 connection(s)
+2022-04-15 12:50:58,218 daphne.server ERROR    Exception inside application: ERR unknown command 'BZPOPMIN'
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    result = task.result()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 492, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 547, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 385, in _brpop_with_clean
+    result = await connection.bzpopmin(channel, timeout=timeout)
+aioredis.errors.ReplyError: ERR unknown command 'BZPOPMIN'
+2022-04-15 12:50:58,235 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 58335]
+2022-04-15 12:50:58,235 django.channels.server INFO     WebSocket DISCONNECT /ws/check [127.0.0.1:58335]
+2022-04-15 12:52:17,740 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:52:18,445 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:52:18,633 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:52:18,773 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:52:18,773 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:52:18,773 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:53:33,244 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\chat\consumers.py changed, reloading.
+2022-04-15 12:53:34,000 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:53:34,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:53:55,524 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:53:56,239 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:53:56,430 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:53:56,576 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:53:56,577 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:53:56,577 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:54:16,829 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/5 [127.0.0.1:57248]
+2022-04-15 12:54:16,829 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 57248] to WebSocket
+2022-04-15 12:54:17,763 daphne.server ERROR    Exception inside application: No route found for path 'ws/chat/5'.
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 168, in __call__
+    raise ValueError("No route found for path %r." % path)
+ValueError: No route found for path 'ws/chat/5'.
+2022-04-15 12:54:17,766 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 57248]
+2022-04-15 12:54:17,766 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/5 [127.0.0.1:57248]
+2022-04-15 12:55:10,932 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:55:11,626 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:55:11,823 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:55:11,984 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:55:11,985 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:55:11,985 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:55:18,357 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat [127.0.0.1:52335]
+2022-04-15 12:55:18,358 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 52335] to WebSocket
+2022-04-15 12:55:19,054 daphne.server ERROR    Exception inside application: __call__() missing 1 required positional argument: 'send'
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\asgiref\compatibility.py", line 34, in new_application
+    return await instance(receive, send)
+TypeError: __call__() missing 1 required positional argument: 'send'
+2022-04-15 12:55:19,060 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 52335]
+2022-04-15 12:55:19,061 django.channels.server INFO     WebSocket DISCONNECT /ws/chat [127.0.0.1:52335]
+2022-04-15 12:57:12,086 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:57:12,801 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:57:12,998 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:57:13,143 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:57:13,143 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:57:13,144 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:57:15,788 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat [127.0.0.1:57147]
+2022-04-15 12:57:15,788 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 57147] to WebSocket
+2022-04-15 12:57:15,828 aioredis     DEBUG    Creating tcp connection to ('127.0.0.1', 6379)
+2022-04-15 12:57:16,167 daphne.server ERROR    Exception inside application: 'room_name'
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\asgiref\sync.py", line 414, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Users\soviu\AppData\Local\Programs\Python\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\soviu\AppData\Local\Programs\Python\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\db.py", line 13, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\asgiref\sync.py", line 455, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 125, in dispatch
+    handler(message)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\generic\websocket.py", line 38, in websocket_connect
+    self.connect()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\chat\consumers.py", line 8, in connect
+    self.room_name = self.scope['url_route']['kwargs']['room_name']
+KeyError: 'room_name'
+2022-04-15 12:57:16,183 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 57147]
+2022-04-15 12:57:16,183 django.channels.server INFO     WebSocket DISCONNECT /ws/chat [127.0.0.1:57147]
+2022-04-15 12:58:00,305 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:58:01,071 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 12:58:01,265 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 12:58:01,440 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2022-04-15 12:58:01,440 daphne.server INFO     Configuring endpoint tcp:port=3000:interface=127.0.0.1
+2022-04-15 12:58:01,441 daphne.server INFO     Listening on TCP address 127.0.0.1:3000
+2022-04-15 12:58:05,563 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat [127.0.0.1:52804]
+2022-04-15 12:58:05,564 daphne.http_protocol DEBUG    Upgraded connection ['127.0.0.1', 52804] to WebSocket
+2022-04-15 12:58:05,592 aioredis     DEBUG    Creating tcp connection to ('127.0.0.1', 6379)
+2022-04-15 12:58:05,592 aioredis     DEBUG    Creating tcp connection to ('127.0.0.1', 6379)
+2022-04-15 12:58:05,596 aioredis     DEBUG    Closed 1 connection(s)
+2022-04-15 12:58:05,601 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 52804] open and established
+2022-04-15 12:58:05,601 django.channels.server INFO     WebSocket CONNECT /ws/chat [127.0.0.1:52804]
+2022-04-15 12:58:05,601 daphne.ws_protocol DEBUG    WebSocket ['127.0.0.1', 52804] accepted by application
+2022-04-15 12:58:06,473 daphne.server ERROR    Exception inside application: ERR unknown command 'BZPOPMIN'
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\staticfiles.py", line 44, in __call__
+    return await self.application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 71, in __call__
+    return await application(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\middleware.py", line 26, in __call__
+    return await self.inner(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\routing.py", line 150, in __call__
+    return await application(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels\utils.py", line 50, in await_many_dispatch
+    result = task.result()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 492, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 547, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\channels_redis\core.py", line 385, in _brpop_with_clean
+    result = await connection.bzpopmin(channel, timeout=timeout)
+aioredis.errors.ReplyError: ERR unknown command 'BZPOPMIN'
+2022-04-15 12:58:06,488 daphne.ws_protocol DEBUG    WebSocket closed for ['127.0.0.1', 52804]
+2022-04-15 12:58:06,488 django.channels.server INFO     WebSocket DISCONNECT /ws/chat [127.0.0.1:52804]
+2022-04-15 13:01:25,172 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\venv\Lib\site-packages\channels\management\commands\__init__.py changed, reloading.
+2022-04-15 13:01:25,830 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:01:26,030 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:01:41,381 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:01:42,410 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:01:42,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:06:36,562 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 13:06:37,261 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:06:37,477 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:12:20,326 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:12:21,851 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:12:22,131 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:12:38,724 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:12:40,218 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:12:40,470 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:12:55,871 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:12:57,354 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:12:57,614 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:13:02,557 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:13:03,251 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:13:03,449 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:13:33,120 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:13:33,808 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:13:34,004 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:13:41,525 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:13:42,218 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:13:42,408 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:14:00,161 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:14:00,855 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:14:01,041 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:14:20,542 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:14:43,838 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:15:24,233 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:15:37,967 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:16:10,070 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:16:10,790 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:16:10,981 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:17:31,719 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:17:32,456 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:17:32,653 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:19:09,429 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:19:10,152 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:19:10,349 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:19:59,168 asyncio      DEBUG    Using selector: SelectSelector
+2022-04-15 13:20:09,695 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:20:23,168 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:20:25,446 django.request WARNING  Not Found: /
+2022-04-15 13:20:37,379 django.request WARNING  Not Found: /api/register
+2022-04-15 13:20:44,783 django.request WARNING  Method Not Allowed: /api/new_article
+2022-04-15 13:22:14,342 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:22:17,321 django.request WARNING  Method Not Allowed: /api/new_article
+2022-04-15 13:22:36,986 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:22:38,943 django.request WARNING  Method Not Allowed: /api/new_article
+2022-04-15 13:22:40,710 django.request WARNING  Method Not Allowed: /api/new_article
+2022-04-15 13:23:08,517 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:23:11,358 django.request WARNING  Not Found: /
+2022-04-15 13:23:19,748 django.request WARNING  Not Found: /api/cabinet
+2022-04-15 13:23:41,661 django.request WARNING  Method Not Allowed: /api/new_article
+2022-04-15 13:24:07,188 django.request ERROR    Internal Server Error: /api/new_article
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.NotNullViolation: ОШИБКА:  значение NULL в столбце "profile_id" отношения "api_article" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (2, 2022-04-15 13:24:07.040296+03, qwe, qwe, 0, t, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 806, in save
+    self.save_base(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 857, in save_base
+    updated = self._save_table(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ОШИБКА:  значение NULL в столбце "profile_id" отношения "api_article" нарушает ограничение NOT NULL
+DETAIL:  Ошибочная строка содержит (2, 2022-04-15 13:24:07.040296+03, qwe, qwe, 0, t, null).
+
+2022-04-15 13:27:29,747 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:27:39,789 django.request WARNING  Not Found: /api/new_article/1
+2022-04-15 13:27:54,777 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:27:57,055 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 63, in get_queryset
+    assert self.queryset is not None, (
+AssertionError: 'ArticlesUpdateDestroyView' should either include a `queryset` attribute, or override the `get_queryset()` method.
+2022-04-15 13:28:41,573 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:36:25,165 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:36:28,701 django.request WARNING  Unauthorized: /api/new_article/1
+2022-04-15 13:38:27,918 django.request WARNING  Unauthorized: /api/new_article/1
+2022-04-15 13:38:42,158 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:39:26,145 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:41:04,073 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 13:41:05,389 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:41:46,087 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:41:49,894 django.request WARNING  Method Not Allowed: /api/user/login
+2022-04-15 13:42:33,781 django.request WARNING  Method Not Allowed: /api/new_article
+2022-04-15 13:42:49,660 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:43:23,860 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:43:31,116 django.request WARNING  Unauthorized: /api/new_article/1
+2022-04-15 13:45:09,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:45:13,446 django.request WARNING  Forbidden: /api/new_article
+2022-04-15 13:46:03,132 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:46:09,312 django.request WARNING  Forbidden: /api/new_article
+2022-04-15 13:47:11,171 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 13:47:11,774 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:47:26,013 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:52:46,345 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:54:27,316 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 13:56:11,432 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py changed, reloading.
+2022-04-15 13:56:12,736 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:00:07,697 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:00:40,518 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'pk'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py", line 102, in get_queryset
+    return Article.objects.get(id=self.lookup_field)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1412, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1242, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'pk'.
+2022-04-15 14:01:07,038 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:02:05,487 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:02:08,593 django.request WARNING  Not Found: /api/new_article/1
+2022-04-15 14:02:38,839 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:03:15,178 django.request WARNING  Not Found: /api/new_article/1
+2022-04-15 14:03:48,499 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:04:17,302 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:07:40,288 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py changed, reloading.
+2022-04-15 14:07:41,816 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:15:55,791 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:16:22,998 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:18:43,847 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 14:18:44,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 14:20:42,046 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 14:20:42,622 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:29:08,146 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:29:38,091 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:29:40,441 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 7, in has_permission
+    q = Article.objects.get(view.kwargs["pk"]).user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1339, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable int object
+2022-04-15 16:30:10,046 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:30:12,495 django.request WARNING  Forbidden: /api/new_article/1
+2022-04-15 16:30:53,135 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:30:54,262 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    q = Article.objects.get(view.kwargs["pk"]).user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1466, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1496, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\query.py", line 1339, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable int object
+2022-04-15 16:31:28,717 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:31:38,797 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:31:39,725 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    q = Article.objects.get(id = view.kwargs["pk"]).user
+AttributeError: 'Article' object has no attribute 'user'
+2022-04-15 16:31:57,321 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:32:16,736 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:33:24,960 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    return Article.objects.get(id = view.kwargs["pk"]).profile == request.user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:34:53,183 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    return Article.objects.get(id = view.kwargs["pk"]).profile == request.user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:34:57,315 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    return Article.objects.get(id = view.kwargs["pk"]).profile == request.user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:36:40,404 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:36:42,611 django.request WARNING  Forbidden: /api/new_article/2
+2022-04-15 16:36:48,568 django.request WARNING  Forbidden: /api/new_article/3
+2022-04-15 16:38:00,831 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:38:05,151 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:38:13,079 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:38:15,459 django.request WARNING  Forbidden: /api/new_article/3
+2022-04-15 16:38:20,307 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 12, in has_permission
+    return Article.objects.get(id = view.kwargs["pk"]).profile == request.user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:39:32,067 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:39:36,411 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:39:38,955 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 12, in has_permission
+    q=Article.objects.get(id = view.kwargs["pk"])
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:40:44,179 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 16:40:44,911 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 12, in has_permission
+    q= Article.objects.get(id = 2)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:41:44,344 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 12, in has_permission
+    q= Article.objects.get(id = 2)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 16:44:00,325 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py changed, reloading.
+2022-04-15 16:44:02,807 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:04:52,699 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:05:21,960 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:05:51,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:05:58,623 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    return Article.objects.get(id = int(view.kwargs["pk"])).profile == request.user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 18:06:37,315 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:06:38,339 django.request ERROR    Internal Server Error: /api/new_article/2
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py", line 8, in has_permission
+    q=Article.objects.get(id = int(view.kwargs["pk"]))
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Article.DoesNotExist: Article matching query does not exist.
+2022-04-15 18:06:54,436 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:06:56,838 django.request WARNING  Not Found: /api/new_article/2
+2022-04-15 18:07:50,807 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:08:01,958 django.request WARNING  Forbidden: /api/article
+2022-04-15 18:08:19,318 django.request WARNING  Method Not Allowed: /api/article
+2022-04-15 18:08:41,087 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:08:54,624 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:10:12,019 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:10:53,093 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:11:05,327 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:11:07,401 django.request WARNING  Forbidden: /api/new_article/3
+2022-04-15 18:11:12,232 django.request WARNING  Forbidden: /api/new_article/2
+2022-04-15 18:12:22,821 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py changed, reloading.
+2022-04-15 18:12:23,422 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:12:32,647 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:12:36,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:12:57,798 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:12:58,468 django.request WARNING  Forbidden: /api/new_article/2
+2022-04-15 18:13:48,114 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:13:56,874 django.request WARNING  Forbidden: /api/new_article/2
+2022-04-15 18:16:19,402 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\permissions.py changed, reloading.
+2022-04-15 18:16:20,060 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:24:44,598 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:25:06,378 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:26:47,686 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 18:26:48,328 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:30:18,888 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 18:30:19,506 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:30:31,041 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 18:30:31,634 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:31:17,996 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 18:31:18,563 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:32:34,874 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 18:32:35,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:33:11,901 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:33:14,720 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: ОШИБКА:  столбец api_profile.last_seen не существует
+LINE 1: ...i_profile"."longitude", "api_profile"."latitude", "api_profi...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\authentication.py", line 196, in authenticate
+    return self.authenticate_credentials(token)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\authentication.py", line 201, in authenticate_credentials
+    token = model.objects.select_related('user').get(key=key)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ОШИБКА:  столбец api_profile.last_seen не существует
+LINE 1: ...i_profile"."longitude", "api_profile"."latitude", "api_profi...
+                                                             ^
+
+2022-04-15 18:33:50,597 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 18:33:51,808 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:34:04,977 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-15 18:34:06,195 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:35:07,267 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:37:13,647 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:45:22,834 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:45:47,752 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:46:09,096 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:46:16,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:46:21,715 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:48:28,980 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:48:36,208 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:48:50,377 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:48:53,089 django.request ERROR    Internal Server Error: /api/new_article/1
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\artdate\middlewares.py", line 6, in process_response
+    if request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+2022-04-15 18:51:31,557 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:53:14,481 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:53:36,314 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 18:55:19,271 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 19:02:07,625 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-15 19:02:08,261 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 19:12:11,054 django.request WARNING  Not Found: /user/register
+2022-04-15 19:12:20,574 django.request WARNING  Method Not Allowed: /api/user/register
+2022-04-15 19:16:04,413 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-15 19:16:05,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 19:22:03,403 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-15 19:22:04,512 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-15 19:42:55,606 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
+2022-04-15 19:42:56,473 django.utils.autoreload INFO     Watching for file changes with StatReloader

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Profile, Article, Subjects, ProfilePhoto, MatchedLikes
+from .models import Profile, Article, Subjects, ProfilePhoto, Likes
 
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -12,4 +12,4 @@ admin.site.register(Article, ArticleAdmin)
 admin.site.register(Profile)
 admin.site.register(Subjects)
 # admin.site.register(ProfilePhoto)
-admin.site.register(MatchedLikes)
+admin.site.register(Likes)
