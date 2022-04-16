@@ -40,6 +40,7 @@ class ManyArticlesSerializer(ModelSerializer):
         exclude = ["is_public"]
         def get_text(self,obj):
             return f"{obj.text[0:100]}..."
+        #def get_field_names():
         
 class ArticleSerializer(ModelSerializer):
     profile = ProfileForArticleSerializer()
