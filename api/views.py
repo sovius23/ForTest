@@ -103,3 +103,8 @@ class ArticlesUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         return Article.objects.filter(id=self.kwargs["pk"])
 
+class LikeSenderView(ApiView):
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+    def post(self,request):
+        #profile = request.user?
