@@ -41,7 +41,7 @@ class Subjects(models.Model):
 
 class Article(models.Model):
     """Simple articles model"""
-    profile = models.ForeignKey(Profile, on_delete=models.CASCADE,related_name='user_articles')
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     header = models.CharField(blank=True, max_length=255)
     text = models.TextField()
