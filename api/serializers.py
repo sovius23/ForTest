@@ -16,11 +16,15 @@ class ProfileForArticleSerializer(ModelSerializer):
             'password': {"style": {"input_type": "password"}, 'write_only': True},
         }
         
-        def get_distance(self, obj):
-            profile = self.request.user
-            return calculate_distance(profile.longitude,profile.latitude,obj.longitude,obj.latitude)
-            
+    def get_distance(self, obj):
+        profile = self.context.get("request").user
+        q= calculate_distance.calculate_distance(profile.longitude,profile.latitude,obj.longitude,obj.latitude)
+        return q
 
+class ProfileSerializer(ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = "__all__"
 
 class RegisterSerializer(ModelSerializer):
     class Meta:
@@ -46,5 +50,4 @@ class ArticleSerializer(ModelSerializer):
     profile = ProfileForArticleSerializer()
     class Meta:
         model = Article
-        fields = "__all__"
         exclude = ["is_public"]

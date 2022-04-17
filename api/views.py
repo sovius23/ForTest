@@ -10,7 +10,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView, \
     ListAPIView, CreateAPIView, RetrieveAPIView, RetrieveDestroyAPIView
-from .serializers import ProfileSerializer, RegisterSerializer, ArticleSerializer
+from .serializers import ProfileSerializer, RegisterSerializer, ArticleSerializer,ProfileForArticleSerializer
 from .models import Article, Subjects, ProfilePhoto, Likes
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -56,6 +56,7 @@ class PrivateCabinet(RetrieveUpdateDestroyAPIView):
     serializer_class = ProfileSerializer
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
+    http_method_names = ['get', 'patch', 'delete']
 
     def get_object(self):
         return self.request.user
@@ -75,7 +76,7 @@ class Tets(APIView):
 
 class ArticleView(ListAPIView):
     permission_classes = (AllowAny,)
-    serializer_class = ArticleSerializer
+    serializer_class = ProfileForArticleSerializer
 
     # FILTERS
     def get_queryset(self):
@@ -103,8 +104,11 @@ class ArticlesUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     def get_queryset(self):
         return Article.objects.filter(id=self.kwargs["pk"])
 
-class LikeSenderView(ApiView):
+
+
+class LikeSenderView(APIView):
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)
     def post(self,request):
+        pass
         #profile = request.user?

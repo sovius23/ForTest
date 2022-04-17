@@ -58,6 +58,7 @@ class Article(models.Model):
 
 class Likes(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='who_did_i_like')
+    who_did_i_like=models.ForeignKey(Profile, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name_plural = 'Likes'

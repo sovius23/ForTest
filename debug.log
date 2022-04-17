@@ -1931,3 +1931,254 @@ TypeError: 'bool' object is not callable
 2022-04-15 19:22:04,512 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2022-04-15 19:42:55,606 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py changed, reloading.
 2022-04-15 19:42:56,473 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:12:24,641 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:12:34,212 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:15:04,812 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:15:30,453 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:15:40,333 django.request WARNING  Not Found: /
+2022-04-17 09:18:22,453 django.request ERROR    Internal Server Error: /api/user/cabinet
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 282, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\fields.py", line 1885, in to_representation
+    method = getattr(self.parent, self.method_name)
+AttributeError: 'ProfileForArticleSerializer' object has no attribute 'get_distance'
+2022-04-17 09:19:08,819 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:23:01,878 django.request WARNING  Not Found: /פגüרע
+2022-04-17 09:28:42,471 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:32:44,716 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-17 09:32:45,319 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:34:09,880 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-17 09:34:10,477 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:35:45,401 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\models.py changed, reloading.
+2022-04-17 09:35:46,002 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:36:33,838 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:39:17,265 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:39:58,255 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\views.py changed, reloading.
+2022-04-17 09:39:58,964 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:50:26,533 django.request WARNING  Method Not Allowed: /api/user/register
+2022-04-17 09:51:14,091 django.request WARNING  Bad Request: /api/user/login
+2022-04-17 09:51:26,829 django.request WARNING  Method Not Allowed: /api/user/login
+2022-04-17 09:51:43,964 django.request WARNING  Bad Request: /api/user/login
+2022-04-17 09:51:47,600 django.request WARNING  Bad Request: /api/user/login
+2022-04-17 09:53:21,835 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:54:23,572 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 09:54:45,001 django.request ERROR    Internal Server Error: /api/article
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 1117, in get_field_names
+    assert not (fields and exclude), (
+AssertionError: Cannot set both 'fields' and 'exclude' options on serializer ArticleSerializer.
+2022-04-17 09:56:18,739 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 10:47:25,448 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 10:47:29,236 django.request ERROR    Internal Server Error: /api/article
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\fields.py", line 1886, in to_representation
+    return method(value)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 21, in get_distance
+    q= calculate_distance.calculate_distance(profile.longitude,profile.latitude,obj.longitude,obj.latitude)
+NameError: name 'calculate_distance' is not defined
+2022-04-17 10:47:42,058 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 10:47:44,540 django.request ERROR    Internal Server Error: /api/article
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'longitude'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\fields.py", line 1886, in to_representation
+    return method(value)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 21, in get_distance
+    q= calculate_distance.calculate_distance(profile.longitude,profile.latitude,obj.longitude,obj.latitude)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'longitude'
+2022-04-17 10:48:13,877 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 10:48:30,254 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 16:34:11,628 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 16:54:51,588 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 16:55:58,956 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 16:57:07,615 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 16:59:14,846 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:00:31,964 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:02:53,665 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:07:32,631 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:11:07,168 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\calculate_distance.py changed, reloading.
+2022-04-17 17:11:08,688 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:11:15,180 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:12:17,716 django.utils.autoreload INFO     C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\calculate_distance.py changed, reloading.
+2022-04-17 17:12:19,155 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:22:12,005 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:22:14,487 django.request ERROR    Internal Server Error: /api/article
+Traceback (most recent call last):
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\venv\lib\site-packages\rest_framework\fields.py", line 1886, in to_representation
+    return method(value)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\serializers.py", line 21, in get_distance
+    q= calculate_distance.calculate_distance(profile.longitude,profile.latitude,obj.longitude,obj.latitude)
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\calculate_distance.py", line 27, in calculate_distance
+    return math.atan2(top_fraction(), bottom_fraction()) * 6372795
+  File "C:\Users\soviu\PycharmProjects\ArtDate\artdate\api\service\calculate_distance.py", line 21, in top_fraction
+    math.pow(cos(latano_rad) * sin(latme_rad) - sin(latano_rad) * cos(latme_rad) * cos(delta))
+TypeError: pow expected 2 arguments, got 1
+2022-04-17 17:22:32,320 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:23:08,056 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-04-17 17:23:36,838 django.utils.autoreload INFO     Watching for file changes with StatReloader
