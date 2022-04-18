@@ -77,7 +77,8 @@ class Tets(APIView):
 class ArticleView(ListAPIView):
     permission_classes = (AllowAny,)
     serializer_class = ProfileForArticleSerializer
-
+    def get serializer():
+        pass
     # FILTERS
     def get_queryset(self):
         if self.request.user.is_author:
