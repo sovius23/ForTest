@@ -55,7 +55,9 @@ class Article(models.Model):
     def __str__(self):
         return self.header
 
-
+class ArticleComms(models.Model)
+    comments = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='comments')
+    
 class Likes(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='who_did_i_like')
     who_did_i_like=models.ForeignKey(Profile, on_delete=models.CASCADE)
