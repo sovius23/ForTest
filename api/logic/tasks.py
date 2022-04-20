@@ -3,6 +3,6 @@ from random import randint
 
 
 @app.task
-def debug_task():
+def mailing_list():
     print("qqqqqqqqqqqqqqqqqqqqqwwwwwwwwwwwwwwwwwwwwwweeeeeeeeeeeeeeeeeeeeeeeeee")
     return randint(0, 10)

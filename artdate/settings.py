@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'api',
-    # 'channels',
+    'channels',
+    'chat'
 ]
 
 MIDDLEWARE = [
@@ -141,6 +142,7 @@ STATICFILES_DIRS = (
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
+    'rest_framework.authentication.SessionAuthentication',
     ],
 
     'DEFAULT_THROTTLE_CLASSES': [

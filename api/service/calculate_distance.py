@@ -10,7 +10,6 @@ def calculate_distance(longme, latme, longano, latano):
 
     def sin(decimal):
         return math.sin(decimal)
-
     latme_rad = to_rads(latme)
     latano_rad = to_rads(latano)
     delta = abs(to_rads(longme) - to_rads(longano))
@@ -23,7 +22,5 @@ def calculate_distance(longme, latme, longano, latano):
 
     def bottom_fraction():
         return sin(latano_rad) * sin(latme_rad) + cos(latano_rad) * cos(latme_rad) * cos(delta)
-    x = top_fraction()
-    y= bottom_fraction()
-    return math.atan2(top_fraction(), bottom_fraction()) * 6372795
-# y=0.099//04
+
+    return math.ceil(math.atan2(top_fraction(), bottom_fraction()) * 6372795)/1000

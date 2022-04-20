@@ -1,7 +1,7 @@
 from django.db import models
 
 from django.contrib.auth.models import AbstractUser
-
+from api.logic.managers import MyUserManager
 
 class Profile(AbstractUser):
     """Simple User"""
@@ -11,6 +11,8 @@ class Profile(AbstractUser):
             'unique': "A user with that email already exists."
         }
     )
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
 
     is_subscriber = models.BooleanField(default=True)
     is_author = models.BooleanField(default=False)
@@ -19,13 +21,19 @@ class Profile(AbstractUser):
     longitude = models.FloatField(blank=True, null=True)
     latitude = models.FloatField(blank=True, null=True)
     last_seen = models.DateTimeField(auto_now=True)
+    raiting = models.IntegerField(default=0)
+
+    # objects = MyUserManager() - remove username
     def __str__(self):
-        return self.username
+        return self.email
 
 
 class ProfilePhoto(models.Model):
     profile = models.ForeignKey(Profile, related_name='photos', on_delete=models.CASCADE)
-    photo = models.FileField(models.Model)
+    photo = models.ImageField()
+    def __str__(self):
+        q = self
+        return self.photo.url
 
 
 class Subjects(models.Model):
@@ -55,12 +63,14 @@ class Article(models.Model):
     def __str__(self):
         return self.header
 
-class ArticleComms(models.Model)
+
+class ArticleComments(models.Model):
     comments = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='comments')
-    
+
+
 class Likes(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='who_did_i_like')
-    who_did_i_like=models.ForeignKey(Profile, on_delete=models.CASCADE)
+    who_did_i_like = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name_plural = 'Likes'
